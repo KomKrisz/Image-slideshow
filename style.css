@@ -1,0 +1,139 @@
+body{
+    background: linear-gradient(to right, #6E6E6DFF 0%, #FAD0C9FF 100%);
+    margin: 0;
+}
+
+#container{
+  width: 60%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: blanchedalmond; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  
+}
+
+#container::before{
+  content: "";
+  background-image: url(/pinkheart.jpg);
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#slider{
+  display: flex; 
+  flex-direction: row;
+  width: inherit;
+  border-radius: 20px;
+  position: relative;
+  margin: auto;
+}
+
+#la{
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+#ra{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}  
+
+#photo-container{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#grey-container{
+  position: absolute;
+  left: 190px;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  bottom: 5px;
+  background-color: black;
+  border-radius: 0 0 20px 20px;
+  opacity: 0.6;
+  height: 100px;  
+  width: 580px;
+}
+
+#photo-container img{
+  object-fit: contain;
+  width: 600px;
+  height: 800px;
+  object-fit: cover;
+  border: pink 2px solid;
+  border-radius: 30px;
+}
+
+#grey-container h1{
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+#grey-container p{
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+#thumbnails {
+  margin-top: 80px;
+  text-align: center;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.small {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  border: whitesmoke 5px groove;
+
+}
+
+.small:hover{
+  webkit-transform: scale(1.5);
+  ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
